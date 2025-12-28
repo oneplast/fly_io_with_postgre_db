@@ -7,6 +7,12 @@ spring:
     hikari:
       auto-commit: false
 
+  jpa:
+    properties:
+      format_sql: false
+      highlight_sql: false
+      use_sql_comments: false
+
 logging:
   level:
     io.river.flyiopostgres: INFO
