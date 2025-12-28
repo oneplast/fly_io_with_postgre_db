@@ -3,8 +3,16 @@
 name: Fly Deploy
 on:
   push:
+    paths:
+      - src/**
+      - build.gradle.kts
+      - settings.gradle.kts
+      - fly.toml
+      - .github/workflows/*.yml
+      - Dockerfile
     branches:
       - main
+
 jobs:
   deploy:
     name: Deploy app
