@@ -1,7 +1,7 @@
 spring:
   datasource:
     url: jdbc:postgresql://oneplast-db.internal:5432/surl_prod
-#    url: jdbc:postgresql://localhost:5434/surl_prod
+    #    url: jdbc:postgresql://localhost:5434/surl_prod
     username: postgres
     driver-class-name: org.postgresql.Driver
     hikari:
@@ -12,6 +12,7 @@ spring:
       format_sql: false
       highlight_sql: false
       use_sql_comments: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
 
 logging:
   level:
