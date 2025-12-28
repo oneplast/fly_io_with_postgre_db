@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://oneplast-db.internal:5432/surl_prod
+#    url: jdbc:postgresql://localhost:5434/surl_prod
+    username: postgres
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      auto-commit: false
+
+logging:
+  level:
+    io.river.flyiopostgres: INFO
+    org.hibernate.SQL: INFO
+    org.hibernate.orm.jdbc.bind: INFO
+    org.hibernate.orm.jdbc.extract: INFO
+    org.springframework.transaction.interceptor: INFO
